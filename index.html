@@ -3,85 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="public/css/programs.css">
     <script src="public/js/programs.js"></script>
+    <link rel="stylesheet" href="public/css/nav.css">
+    <script src="public/js/nav.js"></script>
 </head>
-<body>
-
-<h2>Ta strona jest w przygotowaniu pracujemy nad nią</h2>
+<body class="mdb-skin-custom">
+<!--window.getComputedStyle(element);-->
     <div class="wrapper">
-        <header id="navbar" class="content-header ">
-
-
-            <div class="container-max header-b ">
-                <div class="ai-logo">
-                    <h1>
-                        <a class="parent-center-h" href="index.html">
-                            <img class="center-h" src="img/aireobook.png" alt="aireobook">
-                        </a>
-                    </h1>
+        <div class="layout">
+            <div class="vertical-nav side-nav">
+<!---->
+<!---->
+<!---->
+                <div class="dfdfd">
+                            <h1>
+                                <a class="logo"  href="index.html">
+                                    <img class="center-h" src="public/img/aireobook.png" alt="aireobook">
+                                </a>
+                            </h1>
                 </div>
 
 
-                <div class="d_flex">
+
+                <ul id="side-menu" class="collapsible">
 
 
 
-                    <div class="dropdown d-inline-block language-switch">
-                        <div style="display: flex">
-                            <span class="__t">Language</span>
-                            <div id="btn-lang" class="" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <div class="flages"><img id="actual-language" src="img/flags/es.png" width="23" alt="image">  </div>
+                    <li class="menu-li">
+                        <a class="collapsible-a">Open menu</a>
+                        <div class="collapsible-body">
+                            <p>content menu ul li a</p>
+                        </div>
+
+                    </li>
+
+
+
+                    <li id="jeden" class="menu-li2">
+                        <a class="collapsible-a"><i class="far fa-gem"></i>Javascript programs <i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul class="sub-menu">
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible-a"  href="#">Jeden</a>
+                                </li>
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible-a" href="#">Dwa</a>
+                                </li>
+
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible-a"  href="#">Trzy</a>
+                                </li>
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible-a" href="#">Cztery &amp; Piec</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="dwa" class="menu-li2">
+                        <a class="collapsible-a"><i class="fas fa-download"></i>Opisy <i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul class="sub-menu">
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible-a"  href="#">Opis jeden</a>
+                                </li>
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible-a" href="#">Opis dwa &amp; Opis trzy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="trzy" class="menu-li2">
+                        <a class="collapsible-a"><i class="fas fa-th"></i>Video Tutorials<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul class="sub-menu">
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible-a"  href="#">Video jeden</a>
+                                </li>
+                                <li  class="submenu-li">
+                                    <a class="subcollapsible" href="#">Video 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+
+
+
+
+
+<!---->
+<!---->
+<!---->
+
+            </div>
+            <div class="page-content">
+                <header  class="header">
+
+                    <div class="navbar ">
+                        <div class="navbar-left">
+                            <h1>
+
+
+                                    <div id="rolling" style="width: 50px; height: 50px">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 35 25" stroke="black" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M4,6h16 M4,12h16 M4,18h16"></path>
+                                        </svg>
+
+
+                                    </div>
+
+
+
+                            </h1>
+                        </div>
+
+
+                        <div class="navbar-right">
+
+
+
+                            <div class="dropdown d-inline-block language-switch">
+                                <div style="display: flex">
+                                    <span class="__t">Language</span>
+                                    <div id="btn-lang" class="" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+<!--                                        <div class="flages"><img id="actual-language" src="img/flags/es.png" width="23" alt="image">  </div>-->
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-menu dropdown-menu-end show" style="" data-popper-placement="bottom-end">
+<!--                                    <div id="flag-colombia" data-lang="co" title="Colombia" class="flags  padding-left-20"><img src="img/flags/co.png" width="23">Colombia</div>-->
+<!--                                    <div id="flag-poland" data-lang="pl" title="Poland" class="flags  padding-left-20"><img src="img/flags/pl.png" width="23">Poland</div>-->
+<!--                                    <div id="flag-russia" data-lang="ru" title="Russia" class="flags  padding-left-20"><img src="img/flags/ru.png" width="23">Russia</div>-->
+<!--                                    <div id="flag-spain" data-lang="es" title="Spain" class="flags  padding-left-20"><img src="img/flags/es.png" width="23" alt="spain">Spain</div>-->
+<!--                                    <div id="flag-english" data-lang="en" title="English" class="flags  padding-left-20"><img src="img/flags/en.png" width="23" alt="spain">English</div>-->
+
+
+
+                                </div>
                             </div>
+
+
+
+                            <div class="dropdown d-inline-block">
+
+                                <div class="caButton js-btn" data-id="celicense" data-toggle="modal1111111___" data-type="default"><i class="far fa-address-card"></i> License</div>
+
+                            </div>
+
+
+                            <div class="dropdown d-inline-block">
+                                <div class="caButton js-btn" data-id="ceoption" data-toggle="modal1111111___" data-type="default"><i class="far fa-address-card"></i> About</div>
+                            </div>
+
+                            &nbsp;
+                            <div class="dropdown d-inline-block">
+                                <div id="modal-config" class="caButton js-btn" data-id="ceconfig" data-toggle="modal1111111___" data-type="default"><i class="fa fa-cog" aria-hidden="true"></i>Config</div>
+
+                            </div>
+
+
+                            <div class="dropdown d-inline-block">
+                                <button type="button" class="btn">
+                                    &nbsp; &nbsp;
+                                </button>
+                            </div>
+
+
                         </div>
 
-                        <div class="dropdown-menu dropdown-menu-end show" style="" data-popper-placement="bottom-end">
-                            <div id="flag-colombia" data-lang="co" title="Colombia" class="flags  padding-left-20"><img src="img/flags/co.png" width="23">Colombia</div>
-                            <div id="flag-poland" data-lang="pl" title="Poland" class="flags  padding-left-20"><img src="img/flags/pl.png" width="23">Poland</div>
-                            <div id="flag-russia" data-lang="ru" title="Russia" class="flags  padding-left-20"><img src="img/flags/ru.png" width="23">Russia</div>
-                            <div id="flag-spain" data-lang="es" title="Spain" class="flags  padding-left-20"><img src="img/flags/es.png" width="23" alt="spain">Spain</div>
-                            <div id="flag-english" data-lang="en" title="English" class="flags  padding-left-20"><img src="img/flags/en.png" width="23" alt="spain">English</div>
 
-
-
-                        </div>
-                    </div>
-
-
-
-                    <div class="dropdown d-inline-block">
-
-                        <div class="caButton js-btn" data-id="celicense" data-toggle="modal1111111___" data-type="default"><i class="far fa-address-card"></i> License</div>
 
                     </div>
 
 
-                    <div class="dropdown d-inline-block">
-                        <div class="caButton js-btn" data-id="ceoption" data-toggle="modal1111111___" data-type="default"><i class="far fa-address-card"></i> About</div>
-                    </div>
-
-                    &nbsp;
-                    <div class="dropdown d-inline-block">
-                        <div id="modal-config" class="caButton js-btn" data-id="ceconfig" data-toggle="modal1111111___" data-type="default"><i class="fa fa-cog" aria-hidden="true"></i>Config</div>
-
-                    </div>
-
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                            &nbsp; &nbsp;
-                        </button>
-                    </div>
-
-
-                </div>
-
-
+                </header>
 
             </div>
 
 
-        </header>
+
+
+        </div>
+
     </div>
 
 </body>

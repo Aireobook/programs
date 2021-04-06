@@ -1,0 +1,131 @@
+.side-nav .collapsible {
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.side-nav ul {
+    padding-left: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+.side-nav ul li {
+    padding: 0;
+}
+
+
+.side-nav .collapsible>li {
+    border-radius: 2px;
+}
+
+
+.side-nav a {
+    display: block;
+    height: 56px;
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 56px;
+}
+
+
+.side-nav .collapsible a {
+    height: 36px;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 36px;
+    color: #fff;
+}
+
+.mdb-skin-custom .side-nav .collapsible li .collapsible-a {
+    color: #424242;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    background: aqua;
+}
+
+.mdb-skin-custom .side-nav .collapsible li .collapsible-a:hover {
+    /*background-color: rgba(0,0,0,0.05);*/
+    cursor: pointer;
+
+    background: red;
+}
+.side-nav .collapsible>li a.collapsible-a:hover {
+    /*background-color: rgba(255,255,255,0.15);*/
+    background: yellow;
+}
+
+
+.collapsible-body {
+    display: none;
+    /*background: chartreuse;*/
+}
+
+
+.side-nav .collapsible ul {
+    padding: 0;
+    list-style-type: none;
+    left: 23px;
+    position: relative;
+    /*z-index: 3;*/
+}
+
+
+.mdb-skin-custom .side-nav .collapsible li {
+    /*background-color: transparent;*/
+}
+
+
+.side-nav .collapsible-body a {
+    /*height: 28px;*/
+    /*line-height: 28px;*/
+    /*!*background-color: rgba(95,93,93,0.15);*!*/
+    /*background: teal;*/
+}
+
+.mdb-skin-custom .side-nav .collapsible li a {
+    font-weight: 400;
+}
+
+.mdb-skin-custom .side-nav .collapsible li .collapsible-body a {
+    color: #424242;
+    font-size: .78rem;
+    height: 28px;
+    line-height: 28px;
+    /*background-color: rgba(95,93,93,0.15);*/
+    font-size: .78rem;
+}
+
+.mdb-skin-custom .side-nav .collapsible li .collapsible-body a:hover {
+    color: #4285f4;
+}
+
+/*************************************************************/
+
+
+.menu-li{
+    background: yellow;
+}
+
+
+.active .rotate-icon{
+    -webkit-transition: all 150ms ease-in 0s;
+    transition: all 150ms ease-in 0s;
+    -webkit-transform: rotate( 180deg );
+    transform: rotate( 180deg );
+}
+
+.collapsible-a{
+    position: relative;
+}
+.side-nav .fa-angle-down.rotate-icon {
+    position: absolute;
+    top: .8rem;
+    right: 0;
+    margin-right: 1.25rem;
+}
+
+.collapsible .fas, .collapsible .far {
+    margin-right: 13px;
+    font-size: .8rem;
+}
