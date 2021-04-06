@@ -15,6 +15,7 @@ body {
     background-position: center;
     background-size: cover;
     font-family: "Roboto",sans-serif;
+    position: fixed;
 }
 
 .logo img{
@@ -24,6 +25,7 @@ body {
 .layout{
     display: flex;
     height: 100vh;
+    width: 100%;
 }
 #rolling{
     cursor: pointer;
@@ -36,21 +38,38 @@ body {
 
     transition: all .4s;
 }
-.page-content{
-    background: #dbdbd2;
+.page{
+    background: #c6c657;
     width: 100%;
+    margin: 5px;
 }
 
 .header{
-    background: #ffffff;
+    background: #b1b1b1;
     height: 50px;
 }
 .navbar{
     display: flex;
+    position: fixed;
     justify-content: space-between;
     padding: 0 23px;
 }
 
 .navbar-right{
     display: flex;
+}
+
+.wrapper{
+    width: 100vw;
+}
+.main-wrapper{
+    background: #69d2b4;
+    padding: 23px;
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+}
+.page-content{
+    background: #8699fc;
+    /*padding: 23px;*/
+    /*margin: 23px;*/
 }
