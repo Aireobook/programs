@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="public/css/programs.css">
     <script src="public/js/programs.js"></script>
-    <link rel="stylesheet" href="public/css/nav.css">
-    <script src="public/js/nav.js"></script>
+<!--    <link rel="stylesheet" href="nav/nav.css">-->
+<!--    <script src="navigation/nav.js"></script>-->
     <script src="ajax/ajax.js"></script>
+    <link rel="stylesheet" href="ajax/ajax.css">
+    <script src="nav/nav.js"></script>
+    <link rel="stylesheet" href="nav/nav.css">
 </head>
 <body class="mdb-skin-custom">
 <!--window.getComputedStyle(element);-->
@@ -32,25 +35,30 @@
 
 
 
-                    <li class="menu-li">
-                        <a class="collapsible-a">Open menu</a>
-                        <div class="collapsible-body">
-                            <p>content menu ul li a</p>
-                        </div>
+<!--                    <li class="menu-li">-->
+<!--                        <a class="collapsible-a">Open menu</a>-->
+<!--                        <div class="collapsible-body">-->
+<!--                            <p>content menu ul li a</p>-->
+<!--                        </div>-->
 
+<!--                    </li>-->
+
+
+                    <li class="ome-menu">
+                        <div  class="js-link">Home</div>
                     </li>
 
 
 
-                    <li id="jeden" class="menu-li2">
-                        <a class="collapsible-a"><i class="far fa-gem"></i>Javascript programs <i class="fa fa-angle-down rotate-icon"></i></a>
+                    <li id="jeden" class="menu-li">
+                        <a class="collapsible-a zz"><i class="far fa-gem"></i>Javascript programs <i class="fa fa-angle-down rotate-icon"></i></a>
                         <div class="collapsible-body">
                             <ul class="sub-menu">
                                 <li  class="submenu-li">
-                                    <a class="subcollapsible-a"  href="#">Jeden</a>
+                                    <a class="js-link" data-link="pages/home.html" href="pages/home.html">Home</a>
                                 </li>
                                 <li  class="submenu-li">
-                                    <a class="subcollapsible-a" href="#">Dwa</a>
+                                    <a class="js-link" href="pages/test.html">Test</a>
                                 </li>
 
                                 <li  class="submenu-li">
@@ -66,7 +74,7 @@
                         </div>
                     </li>
 
-                    <li id="dwa" class="menu-li2">
+                    <li id="dwa" class="menu-li">
                         <a class="collapsible-a"><i class="fas fa-download"></i>Opisy <i class="fa fa-angle-down rotate-icon"></i></a>
                         <div class="collapsible-body">
                             <ul class="sub-menu">
@@ -80,7 +88,7 @@
                         </div>
                     </li>
 
-                    <li id="trzy" class="menu-li2">
+                    <li id="trzy" class="menu-li">
                         <a class="collapsible-a"><i class="fas fa-th"></i>Video Tutorials<i class="fa fa-angle-down rotate-icon"></i></a>
                         <div class="collapsible-body">
                             <ul class="sub-menu">

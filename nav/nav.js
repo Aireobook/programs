@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     Animation({
-        "menu_li": "menu-li2",
+        "menu_li": "menu-li",
         "collapsible_a": "collapsible-a",
         "collapsible_body": "collapsible-body",
 
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function () {
              let el_li  = e.target.parentNode;  // li
              let el_a   = e.target;             // a
              if (_el_div === false){
-                  _el_div = e.target.parentNode.querySelector('.' + self._config['collapsible_body']);  // div
+                  _el_div = e.target.closest(".menu-li").querySelector('.' + self._config['collapsible_body']);  // div
              }
 
              if (_h_li === false){

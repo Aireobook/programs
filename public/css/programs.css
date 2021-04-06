@@ -30,14 +30,7 @@ body {
 #rolling{
     cursor: pointer;
 }
-.vertical-nav{
-    background: cornflowerblue;
-    width: 290px;
-    /*height: 100vh;*/
-    margin-left: 0;
 
-    transition: all .4s;
-}
 .page{
     background: #c6c657;
     width: 100%;
