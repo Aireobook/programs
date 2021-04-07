@@ -16,6 +16,14 @@ body {
     background-size: cover;
     font-family: "Roboto",sans-serif;
     position: fixed;
+    background-image: url("../img/bg/bgk1.jpg");
+
+    /*-webkit-touch-callout: none;*/
+    /*-webkit-user-select: none;*/
+    /*-khtml-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
 }
 
 .logo img{
@@ -32,24 +40,37 @@ body {
 }
 
 .page{
-    background: #c6c657;
+    background: #ffffff63;
     width: 100%;
-    margin: 5px;
+    /*margin: 5px;*/
+    margin-left: 5px;
+    /*background-image: url("../img/bg/bgk1.jpg");*/
 }
 
 .header{
-    background: #b1b1b1;
+    background: #819ebe45;
     height: 50px;
+    box-shadow: 0 5px 5px #0000001a;
 }
 .navbar{
     display: flex;
-    position: fixed;
+    position: relative;
     justify-content: space-between;
     padding: 0 23px;
 }
 
+
+.nav-top{
+    margin-right: 23px;
+}
+
+.navbar-left{
+
+}
+
 .navbar-right{
     display: flex;
+    align-self: center;  // vertical center
 }
 
 .wrapper{
@@ -57,12 +78,32 @@ body {
 }
 .main-wrapper{
     background: #69d2b4;
+    background: #6da5bd45;
     padding: 23px;
-    /*height: 100vh;*/
-    /*width: 100vw;*/
+    /* height: 100vh; */
+    /* width: 100vw; */
+    margin: 23px;
+    box-shadow: 4px 4px 8px #0000001f;
 }
 .page-content{
     background: #8699fc;
     /*padding: 23px;*/
     /*margin: 23px;*/
 }
+
+.nav-js{
+    cursor: pointer;
+    color: #1ab0cf;
+    transition: all .5s;
+
+    border: 1px solid teal;
+    border-radius: 13px;
+    padding: 1px 10px;
+}
+
+.nav-js:hover{
+    color: #c2dee3;
+    transition: all .5s;
+    cursor: pointer;
+}
+
