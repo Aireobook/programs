@@ -1,3 +1,18 @@
+
+ /*START*/
+ .collapsible-body {
+     display: none;
+     /*background: chartreuse;*/
+     overflow: hidden;
+ }
+
+
+
+
+
+
+/**************************/
+
 .side-nav .collapsible {
     padding: 0;
     margin: 0;
@@ -139,10 +154,6 @@
 }
 
 
-.collapsible-body {
-    display: none;
-    /*background: chartreuse;*/
-}
 
 
 .side-nav .collapsible ul {
@@ -233,6 +244,9 @@
     background: #e1e1e13b;
 }
 
+.clicked{
+    color: #69d2b4;
+}
 
 
 .ome-menu{
@@ -254,8 +268,20 @@
 
 }
 
+/*************** test ********************/
+
+.menu-li{
+    /*background: #8699fc;*/
+}
+
+.collapsible-a{
+    /*background: #69d2b4;*/
+}
 
 
+.collapsible-a{
+    /*background: yellow;*/
+}
 
 
 
