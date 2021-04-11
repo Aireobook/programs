@@ -1,4 +1,32 @@
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+.scroller {
+    /*overflow-y: scroll;*/
+    /*scrollbar-color: #0A4C95 #C2D2E4;*/
+    /*scrollbar-color:red yellow;*/
+    scrollbar-width:5px;
+}
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -46,7 +74,7 @@ body {
     margin-left: 5px;
     /*background-image: url("../img/bg/bgk1.jpg");*/
     height: 100%;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
 }
 
 .header{
@@ -56,15 +84,21 @@ body {
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 60;
 }
 .navbar{
     display: flex;
-    position: relative;
-    /*position: absolute;*/
+
+     position: absolute;
     justify-content: space-between;
     padding: 0 23px;
-    padding-left: 280px;
+    margin-left: 259px;
     transition: all .4s;
+    /*background: #ffffff66;*/
+    backdrop-filter: blur(9px);
+    right: 0;
+    left:  0;
+    box-shadow: 0 14px 20px #0000001c;
 
 }
 
@@ -89,10 +123,14 @@ body {
     /*background: #69d2b4;*/
     /*background: #6da5bd8c;*/
     padding: 23px;
-    margin: 23px;
+    /*margin: 23px;*/
     /*box-shadow: 4px 4px 8px #0000001f;*/
     text-shadow: 2px 2px 7px #0000001c;
     /*backdrop-filter: blur(8px);*/
+    overflow-y: auto;
+    height: calc(100% - 140px);
+    position: relative;
+    top: 60px;
 }
 .page-content{
     background: #8699fc;
@@ -120,6 +158,6 @@ body {
 
 
 .layout.hidden .navbar{
-    padding-left: 23px;
+    margin-left: 4px;
     transition: all .4s;
 }

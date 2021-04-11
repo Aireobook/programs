@@ -1,6 +1,20 @@
 
 window.addEventListener('load', function () {
 
+    // document.getElementById().innerHTML = "Start";
+    document.body.addEventListener('click', fmouse, false  )
+
+    function fmouse(e){
+        // console.dir(e)
+
+         // console.log("docucmentElement",document.documentElement);
+        window.epage = document.getElementById('page');
+        // window.epager= epage.documentElement;
+        console.dir(epage)
+    }
+
+
+
     let rolling = document.getElementById('rolling');
     let vertican_nav = document.querySelector('.vertical-nav');
     let layout = vertican_nav.closest('.layout');

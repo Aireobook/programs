@@ -7,7 +7,9 @@
  }
 
 
-
+.color-nav:not(.active){
+    color: yellow !important;
+}
 
 
 

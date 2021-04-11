@@ -13,6 +13,7 @@ function InitAction(){
     let parameter_url = this.getUrlParameters() || false;
 
     let _old = false;
+    let _old_link_a = false;
     let _oldColor = false;
     let url = ''
     let self = this;
@@ -51,15 +52,26 @@ function InitAction(){
 
             let button_link = link.dataset.link;
             window.history.replaceState({}, document.title, hostname + '?page=' + button_link);
-
             self.ajax(ala);
+
             if (_old !== false){
                 _old.style.color = 'inherit';
             }
+            if (_old_link_a !== false){
+                // _old_link_a.style.color = 'inherit';
+                _old_link_a.classList.remove('color-nav');
+
+            }
+
+            let li = link.closest('.menu-li')
+            let link_a = li.querySelector('.collapsible-a.active')
+            // link_a.style.color = 'yellow';
+            link_a.classList.add('color-nav');
 
             _oldColor = link.style.color;
             link.style.color = 'yellow'
             _old = link;
+            _old_link_a = link_a;
         }
     }
 
@@ -89,5 +101,9 @@ InitAction.prototype.ajax = function (url){
 InitAction.prototype.obietnica = function (html){
     let action = document.getElementById('action')
     action.innerHTML = html
+    console.log('document.documentElement.scrollHeight', document.documentElement.scrollHeight);
+    console.log('document.documentElement.clientHeight', document.documentElement.clientHeight)
+    // console.dir(document)
+    // console.log(document.height)
 }
 
