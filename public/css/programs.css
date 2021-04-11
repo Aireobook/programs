@@ -50,16 +50,22 @@ body {
 }
 
 .header{
-    background: #819ebe45;
+    /*background: #819ebe45;*/
     height: 50px;
-    box-shadow: 0 5px 5px #0000001a;
+    /*box-shadow: 0 5px 5px #0000001a;*/
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .navbar{
     display: flex;
     position: relative;
-    position: absolute;
+    /*position: absolute;*/
     justify-content: space-between;
     padding: 0 23px;
+    padding-left: 280px;
+    transition: all .4s;
+
 }
 
 
@@ -80,13 +86,13 @@ body {
     width: 100vw;
 }
 .main-wrapper{
-    background: #69d2b4;
-    background: #6da5bd8c;
+    /*background: #69d2b4;*/
+    /*background: #6da5bd8c;*/
     padding: 23px;
     margin: 23px;
-    box-shadow: 4px 4px 8px #0000001f;
+    /*box-shadow: 4px 4px 8px #0000001f;*/
     text-shadow: 2px 2px 7px #0000001c;
-    backdrop-filter: blur(8px);
+    /*backdrop-filter: blur(8px);*/
 }
 .page-content{
     background: #8699fc;
@@ -110,3 +116,10 @@ body {
     cursor: pointer;
 }
 
+
+
+
+.layout.hidden .navbar{
+    padding-left: 23px;
+    transition: all .4s;
+}
