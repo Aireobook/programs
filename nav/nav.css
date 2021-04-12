@@ -8,7 +8,7 @@
 
 
 .color-nav:not(.active){
-    color: yellow !important;
+    color: whitesmoke !important;
 }
 
 
@@ -55,7 +55,7 @@
     font-size: .8rem;
     font-weight: 300;
     line-height: 36px;
-    color: #fff;
+    color: #424242;
 }
 .vertical-nav{
     /*background: #e3e3e3;*/

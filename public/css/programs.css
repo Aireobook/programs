@@ -22,9 +22,7 @@
 
 
 .scroller {
-    /*overflow-y: scroll;*/
-    /*scrollbar-color: #0A4C95 #C2D2E4;*/
-    /*scrollbar-color:red yellow;*/
+
     scrollbar-width:5px;
 }
 
@@ -42,10 +40,15 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    font-family: "Roboto",sans-serif;
+    /*font-family: "Roboto",sans-serif;*/
     position: fixed;
     background-image: url("../img/bg/bgk1.jpg");
 
+
+    font-size: 18px;
+    line-height: 28px;
+    vertical-align: baseline;
+    font-stretch: 100%;
     /*-webkit-touch-callout: none;*/
     /*-webkit-user-select: none;*/
     /*-khtml-user-select: none;*/
@@ -53,6 +56,12 @@ body {
     /*-ms-user-select: none;*/
     /*user-select: none;*/
 }
+
+h1{
+    font-size: 38px;
+    line-height: 48px;
+}
+
 
 .logo img{
     width: 200px;
@@ -160,4 +169,16 @@ body {
 .layout.hidden .navbar{
     margin-left: 4px;
     transition: all .4s;
+}
+
+.aj-wrapper{
+    padding: 3px;
+}
+
+.aj-plexi{
+    margin: 23px;
+    background: #f1f1f10a;
+    padding: 23px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 12px #00000033;
 }

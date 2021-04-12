@@ -4,12 +4,9 @@ window.addEventListener('load', function () {
     // document.getElementById().innerHTML = "Start";
     document.body.addEventListener('click', fmouse, false  )
 
-    function fmouse(e){
-        // console.dir(e)
 
-         // console.log("docucmentElement",document.documentElement);
+    function fmouse(e){
         window.epage = document.getElementById('page');
-        // window.epager= epage.documentElement;
         console.dir(epage)
     }
 
@@ -23,7 +20,7 @@ window.addEventListener('load', function () {
 
     rolling.addEventListener('click', rolLingn, false );
 
-
+    // chowane nav
     function rolLingn(e) {
         if (vertican_nav.classList.contains('hidden')){
             vertican_nav.classList.remove('hidden');
