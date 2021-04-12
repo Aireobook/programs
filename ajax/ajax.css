@@ -1,0 +1,22 @@
+
+.aj-wrapper{
+    padding: 3px;
+}
+
+.aj-plexi{
+    /*margin: 23px;*/
+    background: #a5aec363;
+    margin-bottom: 30px;
+    /*background: #6da5bd5c;*/
+    box-shadow: 4px 4px 8px #0000005f;
+    backdrop-filter: blur(8px);
+    padding: 12px;
+}
+
+.aj-plexi2{
+    margin: 23px;
+    background: #f1f1f10a;
+    padding: 23px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 12px #00000033;
+}

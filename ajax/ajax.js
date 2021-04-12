@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     InitAction();
 })
 
-
+// Koloryzuje odnośniki nav
 function InitAction() {
     if (!(this instanceof InitAction)) {
         return new InitAction();
@@ -36,11 +36,16 @@ function InitAction() {
 
             let li = data_link.closest('.menu-li')
             if (li !== null) {
+
                 let link_a = li.querySelector('.collapsible-a.active')
-                link_a.classList.add('color-nav');
-                _old_a = link_a;
+                if (link_a !== null ){
+                    link_a.classList.add('color-nav');
+                    _old_a = link_a;
+                }
 
             }
+
+
 
             if (url_par === data) {
                 // data_link.style.color = 'whitesmoke';

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* width */
 ::-webkit-scrollbar {
@@ -35,7 +37,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 body {
-    font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+    font-family: Raleway, 'Open Sans', 'Droid Sans', Roboto, arial, sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -169,16 +171,4 @@ h1{
 .layout.hidden .navbar{
     margin-left: 4px;
     transition: all .4s;
-}
-
-.aj-wrapper{
-    padding: 3px;
-}
-
-.aj-plexi{
-    margin: 23px;
-    background: #f1f1f10a;
-    padding: 23px;
-    backdrop-filter: blur(5px);
-    box-shadow: 5px 5px 12px #00000033;
 }
