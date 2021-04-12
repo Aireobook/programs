@@ -20,3 +20,16 @@
     backdrop-filter: blur(5px);
     box-shadow: 5px 5px 12px #00000033;
 }
+.aj-plexi3{
+    margin: 23px;
+    /* background: #f1f1f10a; */
+    padding: 23px;
+    /* backdrop-filter: blur(5px); */
+    box-shadow: 5px 5px 12px #00000014;
+    /* background: rgb(115 65 149); */
+    /* background: linear-gradient(
+90deg
+ , rgb(0 77 255 / 12%) 0%, rgb(255 0 0 / 8%) 50%, rgb(255 149 0 / 31%) 100%); */
+    background: #80bade54;
+    filter: drop-shadow(2px 4px 6px #444444);
+}

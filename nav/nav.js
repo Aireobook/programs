@@ -76,8 +76,10 @@ Animation.prototype.open = function (a_link){
     li.style.height = ul_height_start;  // 2. zablokować wysokoc li
     div.style.display = 'block';
     const  div_height_full = parseInt(getComputedStyle(div).height); // 3.  obliczona wysokość div przy rozwinięciu
-    li.style.height = 'inherit';
-    li.style.overflow = "inherit";
+    // li.style.height = 'inherit';
+    li.style.height = null;
+    // li.style.overflow = "inherit";
+    li.style.overflow = null;
      this.rozwin(0, div_height_full, div)
 }
 

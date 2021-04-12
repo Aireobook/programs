@@ -69,13 +69,13 @@ function InitAction() {
             self.ajax(ala);
 
             if (_old !== false) {
-                _old.style.color = 'inherit';
+                _old.style.color = null;
                 _old.classList.remove('color-nav');
             }
 
 
             if (_old_a !== false) {
-                _old_a.style.color = 'inherit';
+                _old_a.style.color = null;
                 _old_a.classList.remove('color-nav');
             }
 
