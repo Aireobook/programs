@@ -11,6 +11,7 @@ function InitAction() {
     let parameter_url = this.getUrlParameters() || false;
 
     let _old = false;
+    let _old_a = false;
     let _oldColor = false;
     let url = ''
     let self = this;
@@ -33,8 +34,17 @@ function InitAction() {
         for (let data_link of data_links) {
             let data = data_link.dataset.link;
 
+            let li = data_link.closest('.menu-li')
+            if (li !== null) {
+                let link_a = li.querySelector('.collapsible-a.active')
+                link_a.classList.add('color-nav');
+                _old_a = link_a;
+
+            }
+
             if (url_par === data) {
-                data_link.style.color = 'whitesmoke';
+                // data_link.style.color = 'whitesmoke';
+                data_link.classList.add('color-nav');
                 _old = data_link;
             }
         }
@@ -59,14 +69,23 @@ function InitAction() {
             }
 
 
+            if (_old_a !== false) {
+                _old_a.style.color = 'inherit';
+                _old_a.classList.remove('color-nav');
+            }
+
+
             let li = link.closest('.menu-li')
             if (li !== null) {
                 let link_a = li.querySelector('.collapsible-a.active')
                 link_a.classList.add('color-nav');
+                _old_a = link_a;
+
             }
 
             _oldColor = link.style.color;
-            link.style.color = 'whitesmoke'
+            // link.style.color = 'whitesmoke'
+            link.classList.add('color-nav');
             _old = link;
 
         }
