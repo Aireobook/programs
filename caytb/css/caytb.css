@@ -205,7 +205,12 @@ Animation type: (  data-animation="anim" )
 }
 
 
-
+.imnages{
+    display: flex;
+}
+.imnages > * {
+    margin-right: 12px;
+}
 
 
 
