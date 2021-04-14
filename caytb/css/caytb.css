@@ -138,6 +138,75 @@ Animation type: (  data-animation="anim" )
 
 
 
+@keyframes animate_yt05 {
+    from {
+        top: 5px;
+        left: -1200px;
+        opacity: 0;
+        transform: rotateY(940deg)  scale(.2)   ;
+    }
+    55%  {
+        top: 5px;
+        left: 700px;
+        transform: rotateY(420deg)  scale(.7)
+        scale(.3)
+    }
+    to {
+        top: 0;
+        left: 0;
+
+        opacity: 1;
+        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1)
+    }
+}
+
+
+
+@keyframes animate_yt06 {
+    from {
+        top: 5px;
+        left: -1200px;
+        opacity: 0;
+        transform: rotateZ(2140deg)  scale(.2)   ;
+    }
+    35%  {
+        top: 5px;
+        left: -200px;
+        scale(.3)
+    }
+    75%  {
+        top: 5px;
+        left: -200px;
+        scale(.3)
+    transform: rotateZ(0deg)  scale(.7)   ;
+    }
+    to {
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1)
+    }
+}
+
+@keyframes animate_yt07 {
+    from {
+        opacity: 0;
+        transform: scale(0)   ;
+    }
+
+    75%  {
+        scale(.3)
+        transform:   scale(.7)   ;
+    }
+    to {
+        opacity: 1;
+       transform:  scale(1)
+    }
+}
+
+
+
+
 
 
 .caybt.anim .yt .wrapper {
@@ -168,6 +237,21 @@ Animation type: (  data-animation="anim" )
 
 .caybt.anim04 .yt .wrapper {
     animation-name: animate_yt04;
+    animation-duration: 1.3s;
+}
+
+.caybt.anim05 .yt .wrapper {
+    animation-name: animate_yt05;
+    animation-duration: 2.3s;
+}
+
+.caybt.anim06 .yt .wrapper {
+    animation-name: animate_yt06;
+    animation-duration: 1.3s;
+}
+
+.caybt.anim07 .yt .wrapper {
+    animation-name: animate_yt07;
     animation-duration: 1.3s;
 }
 
