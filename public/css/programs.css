@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');*/
 
 /* width */
 ::-webkit-scrollbar {
@@ -43,7 +43,7 @@ body {
     background-position: center;
     background-size: cover;
     /*font-family: "Roboto",sans-serif;*/
-    position: fixed;
+    /*position: fixed;*/
     background-image: url("../img/bg/bgk1.jpg");
 
 
@@ -172,3 +172,4 @@ h1{
     margin-left: 4px;
     transition: all .4s;
 }
+

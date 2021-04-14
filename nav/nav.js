@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
      // 1. Paramentr page w adresie url
      let parm_url = this.parameter();
-    console.log('param_url', parm_url)
+    // console.log('param_url', parm_url)
      if (parm_url){
          let data_link_url =  this.urlSearchLink(parm_url);   // a
 
@@ -52,10 +52,7 @@ Animation.prototype.navVoyager = function (){
 
 Animation.prototype.open = function (a_link){
 
-    // if (a_link === null) {
-    //     console.log("Error: not a_link!")
-    //     return false;
-    // }
+
 
     let li = a_link.closest('.menu-li');
 
@@ -165,59 +162,6 @@ Animation.prototype.urlSearchLink = function (parm_url){
 
 
 
-
- //
- // Animation.prototype.openActiveMenuLink = function (a_open_menu, ul_height_start){
- //
- //     let div_heint_full = false;
- //
- //     let li = a_open_menu.closest('.menu-li')
- //    let a = a_open_menu;
- //    let div = li.querySelector('.collapsible-body');
- //    div.style.display = "block"
- //
- //   if ( li.classList.contains('active')){
- //
- //       li.classList.remove('active')
- //         this.zwin(0, ul_height_start, div)
- //       // div.style.display = "none"
- //
- //   } else{
- //       // div.style.display = "block"
- //       li.classList.add('active')
- //       li.style.overflow = "hidden";
- //       li.style.height = ul_height_start;
- //       div.style.display = 'block';
- //
- //       if (div_heint_full === false){
- //           div_heint_full = parseInt(getComputedStyle(div).height);
- //       }
- //
- //       console.log('div_height_full', div_heint_full)
- //
- //       this.rozwin(0, div_heint_full, div)
- //   }
- //
- //
- //
- //
- // }
- //
-
-
-// Animation.prototype.ulFull =  function (){
-//
-// }
-
-
-
- // // 1. Jeśli instnie parametr page w adresie url - otwiramy nav
- // Animation.prototype.otworzMenuParam = function (parm_url){
- //     // znajdujemy link w navigacji o data-likk = param_url
- //     return  data_link = document.querySelector('[data-link*="' + parm_url +'" ]')
- // }
-
-
 Animation.prototype.getUrlParameters = function (paramewter = 'page'){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -231,30 +175,3 @@ Animation.prototype.parameter = function (){
 
 
 
-
-//
-//
-// Animation.prototype._mixOptions = function (config){
-//
-//
-//     let defaultConfig = JSON.parse(JSON.stringify(this._default));
-//
-//     for (const key in defaultConfig){
-//         if (defaultConfig.hasOwnProperty(key)){
-//             if ( key in config){
-//                 defaultConfig[key] = config[key]
-//             }
-//         }
-//
-//     }
-//     return defaultConfig;
-// }
-
-//
-// Animation.prototype._default = {
-//     "menu_li": "menu-li",
-//     "collapsible_a": "collapsible-a",
-//     "collapsible_body": "collapsible-body",
-//     "skok": 10
-// }
-//
