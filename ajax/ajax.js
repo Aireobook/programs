@@ -129,8 +129,8 @@ InitAction.prototype.ajax = function (url) {
                // console.log('response status', res.status)
                if (res.status !== 200){
                    // console.log("Problem ajax status: " + res.status);
-                   self.page404();
-                   return Promise.reject(new Error(res.statusText))
+                   self.page404(res.status);
+                   return Promise.reject(new Error(res.status))
                }else{
                    return res.text();
                }
@@ -147,9 +147,9 @@ InitAction.prototype.ajax = function (url) {
 }
 
 
-InitAction.prototype.page404 = function (){
+InitAction.prototype.page404 = function (error){
     let action = document.getElementById('action')
-    action.innerHTML = 'Page not found 404';
+    action.innerHTML = 'Page not found. Code: ' + error;
 }
 
 
