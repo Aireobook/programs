@@ -62,7 +62,10 @@ function InitAction() {
 
         function jsLinken(e) {
             e.preventDefault();
-            let ala = link.getAttribute('href')
+            // let ala = link.getAttribute('href')
+            let ala = link.dataset.page;
+
+            console.log('ala-------------------------------', ala)
 
             let button_link = link.dataset.link;
             window.history.replaceState({}, document.title, hostname + '?page=' + button_link);
@@ -105,16 +108,48 @@ InitAction.prototype.getUrlParameters = function (paramewter = 'page') {
     return urlParams.get(paramewter)
 }
 
+// InitAction.prototype.ajax = function (url) {
+//     if (url) {
+//         fetch(url)
+//             .then(res => res.text())
+//             .then(html => {
+//                 this.obietnica(html)
+//             }).catch(err => {
+//             console.warn('Something went wrong.', err)
+//         })
+//     }
+// }
+
+
 InitAction.prototype.ajax = function (url) {
+    let self = this;
     if (url) {
         fetch(url)
-            .then(res => res.text())
-            .then(html => {
-                this.obietnica(html)
-            }).catch(err => {
+           .then(function (res){
+               // console.log('response status', res.status)
+               if (res.status !== 200){
+                   // console.log("Problem ajax status: " + res.status);
+                   self.page404();
+                   return Promise.reject(new Error(res.statusText))
+               }else{
+                   return res.text();
+               }
+
+            })
+            .then(function (html){
+                self.obietnica(html)
+            })
+
+            .catch(err => {
             console.warn('Something went wrong.', err)
         })
     }
+}
+
+
+InitAction.prototype.page404 = function (){
+    let action = document.getElementById('action')
+    action.innerHTML = 'Page not found 404';
 }
 
 
