@@ -205,6 +205,31 @@ Animation type: (  data-animation="anim" )
 }
 
 
+
+
+@keyframes animate_yt08 {
+    from {
+        top: 5px;
+        left: 1200px;
+        opacity: 0;
+        transform: rotateY(940deg)  scale(0)   ;
+    }
+    55%  {
+        top: 5px;
+        left: -700px;
+        transform: rotateY(420deg)  scale(.7)
+        scale(.3)
+    }
+    to {
+        top: 0;
+        left: 0;
+
+        opacity: 1;
+        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1)
+    }
+}
+
+
 .imnages{
     display: flex;
 }
@@ -242,7 +267,7 @@ Animation type: (  data-animation="anim" )
 
 .caybt.anim04 .yt .wrapper {
     animation-name: animate_yt04;
-    animation-duration: 1.3s;
+    animation-duration: 1.9s;
 }
 
 .caybt.anim05 .yt .wrapper {
@@ -258,6 +283,12 @@ Animation type: (  data-animation="anim" )
 .caybt.anim07 .yt .wrapper {
     animation-name: animate_yt07;
     animation-duration: 1.3s;
+}
+
+
+.caybt.anim08 .yt .wrapper {
+    animation-name: animate_yt08;
+    animation-duration: 1.8s;
 }
 
 
