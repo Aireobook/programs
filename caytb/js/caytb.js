@@ -79,46 +79,6 @@ YtbVideo.prototype.initModal = function () {
 }
 
 
-
-//
-//
-// YtbVideo.prototype.close = function (modal_id) {
-//
-//
-//     console.log('modal id', modal_id)
-//     // if (this.close_id !== false) return;
-//     let self = this;
-//
-//     modal_id.addEventListener('click', closededModal, false);
-//
-//     function closededModal() {
-//         modal_id.style.background = 'yellow'
-//                         modal_id.removeFilterBlur;
-//         semodal_id.removeFilterBlur();
-//         modal_id.style.display = "none";
-//
-//         modal_id.classList.add('opoacity0');
-//         // modal_id.classList.remove('opoacity1');
-//         setTimeout(function () {
-//             modal_id.classList.remove('display-block')
-//         }, 40)
-//
-//         let body = document.querySelector("body");
-//         body.style.overflow = 'inherit';
-//
-//     }
-//
-//     // close.onclick = function (event) {
-//     // console.log('ecent', event)
-//     //         if (event.target === self.modal_id) {
-//     //                 self.removeFilterBlur();
-//     //                 self.modal_id.style.display = "none";
-//     //                 let body = document.querySelector("body");
-//     //                 body.style.overflow = 'inherit';
-//     //         }
-//     // }
-// }
-
 // function close(){
 YtbVideo.prototype.closeE = function(_animation) {
     let self = this;
@@ -308,9 +268,7 @@ YtbVideo.prototype.inithtml = function (id) {
     mfc.appendChild(b);
 
 
-    // let finder = document.createElement('div');
-    // finder.setAttribute('id', 'cafinder');
-    // document.body.appendChild(finder);
+
 
 }
 
