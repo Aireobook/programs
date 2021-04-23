@@ -32,17 +32,17 @@ window.addEventListener('DOMContentLoaded', function () {
 
 Animation.prototype.navVoyager = function (){
 
-    let self = this;
+    // let self = this;
     let a_menus = document.querySelectorAll('.collapsible-a')
 
     for (let a_menu of a_menus){
-        a_menu.addEventListener('click', Voyager, false);
+        a_menu.addEventListener('click', Voyager.bind(this), false);
 
         function Voyager(e){
            if (a_menu.classList.contains('active')){
-               self.close(a_menu)
+               this.close(a_menu)
            }else{
-               self.open(a_menu)
+               this.open(a_menu)
            }
         }
     }

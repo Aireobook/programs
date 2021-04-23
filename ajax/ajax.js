@@ -16,19 +16,27 @@ function InitAction() {
     let url = ''
     let self = this;
     const hostname = window.location.pathname;
+    //
+    // if (parameter_url) {
+    //     url = 'pages/' + parameter_url + '.html';
+    //     window.addEventListener('load', function () {
+    //         this.htmlLink(url);
+    //     }.bind(this), false)
+    // }
+
+    // ??? function(){}         () => {}
 
     if (parameter_url) {
         url = 'pages/' + parameter_url + '.html';
-        window.addEventListener('load', function () {
-            htmlLink(url);
+        window.addEventListener('load',  () => {
+            this.htmlLink(url);
         }, false)
     }
 
 
-    function htmlLink(url) {
-        self.ajax(url);
-
-        let url_par = self.getUrlParameters('page');
+InitAction.prototype.htmlLink = function (url) {
+        this.ajax(url);
+        let url_par = this.getUrlParameters('page');
         let data_links = document.querySelectorAll('[data-link]')
 
         for (let data_link of data_links) {

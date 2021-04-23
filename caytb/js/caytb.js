@@ -44,7 +44,7 @@ YtbVideo.prototype.init_travel = function () {
 
             self.runYoutube(data_button);
             self.closeE(_animation);
-            self.closeX(_anomation);
+            self.closeX(_animation);
 
             // self.close(modal_id);
 
