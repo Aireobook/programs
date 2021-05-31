@@ -16,7 +16,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
      // 1. Paramentr page w adresie url
      let parm_url = this.parameter();
-    // console.log('param_url', parm_url)
      if (parm_url){
          let data_link_url =  this.urlSearchLink(parm_url);   // a
 
@@ -57,7 +56,6 @@ Animation.prototype.open = function (a_link){
     let li = a_link.closest('.menu-li');
 
     if (li === null) {
-        console.log("Not paret element li !")
         return false;
     }
 
@@ -130,7 +128,6 @@ Animation.prototype.zwin = function (_min, _max, el_div, skok = 5){
     let n = _min;
     amr();
     function amr(){
-        // console.log('i', i)
         el_div.style.height = (_max - n) + 'px'
         n += skok;
         i++;

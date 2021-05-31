@@ -1,0 +1,27 @@
+
+.button-js{
+    position: relative;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+
+.button-js:hover{
+    transition: all .5s;
+    color: #ffe79e;
+}
+
+
+
+.flags {
+    height: 23px;
+    padding: 2px 3px;
+    width: fit-content;
+    /*color: #a5d7d6;*/
+}
+
+.flags img{
+    padding-right: 3px;
+}
+

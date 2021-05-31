@@ -134,6 +134,11 @@ h1{
     align-self: center;  // vertical center
 }
 
+
+
+
+
+
 .wrapper{
     width: 100vw;
 }
@@ -158,12 +163,13 @@ h1{
 
 .nav-js{
     cursor: pointer;
-    color: #1ab0cf;
+    color: #487197;
     transition: all .5s;
-
-    border: 1px solid teal;
+    /* border: 1px solid #8b9fae; */
     border-radius: 13px;
-    padding: 1px 10px;
+    padding: 0px 14px;
+    background: #b9bac21f;
+    box-shadow: 0 0 14px #0000001f;
 }
 
 .nav-js:hover{
@@ -180,3 +186,11 @@ h1{
     transition: all .4s;
 }
 
+.js-btn i {
+    padding-right: 5px;
+}
+
+.link-image{
+    width: 120px;
+    height: 60px;
+}

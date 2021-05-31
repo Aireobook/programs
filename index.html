@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="public/css/programs.css">
     <script src="public/js/programs.js"></script>
+    <script src="lib/MCL/mcl.js"></script>
+    <link rel="stylesheet" href="csss.css" />
 
     <script src="ajax/ajax.js"></script>
     <link rel="stylesheet" href="ajax/ajax.css">
     <script src="nav/nav.js"></script>
     <link rel="stylesheet" href="nav/nav.css">
-    <link rel="stylesheet" href="caytb/css/caytb.css">
-    <script src="caytb/js/caytb.js"></script>
+    <link rel="stylesheet" href="lib/CAYTB/css/caytb.css">
+    <script src="lib/CAYTB/js/caytb.js"></script>
+    <link rel="stylesheet" href="language/caldic/cadic.css">
+    <link rel="stylesheet" href="language/language.css">
+    <script src="language/caldic/cadic.js"></script>
+    <script src="language/language.js"></script>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 </style>
 <body class="mdb-skin-custom scroller caybt">
+
+<script>  Cadic(); </script>
+
 <div class="wrapper">
     <div class="layout">
         <div class="vertical-nav side-nav">
@@ -41,7 +50,6 @@
 
                     <li class="submenu-li">
                         <a class="js-link clicked" data-link="home" data-page="pages/home.html?page=home">Home</a>
-<!--                        <a class="clicked extend-link" data-link="" href="https://aireobook.github.io/smiles/">Aireobook C&E for Smiles</a>-->
                     </li>
 
 
@@ -51,24 +59,7 @@
                         <div class="collapsible-body">
                             <ul class="sub-menu">
 
-                                <li class="submenu-li">
-                                    <a id="a3" class="js-link" data-link="cmptyt" data-page="pages/cmptyt.html">Compositart Youtube</a>
-                                </li>
-                                <li class="submenu-li">
-                                    <a class="js-link" data-link="compositart_emenu"  data-page="pages/compositart_emenu.html"  >Compositart Viewer</a>
-                                </li>
-                                <li class="submenu-li">
-                                    <a class="js-link" data-link="compositart_code"  data-page="pages/compositart_code.html">Compositart Code</a>
-                                </li>
-                                <li class="submenu-li">
-                                    <a class="js-link" data-link="compositart_image"  data-page="pages/compositart_image.html">Compositart Image</a>
-                                </li>
-                                <li class="submenu-li">
-                                    <a class="js-link" data-link="compositart_slider"  data-page="pages/compositart_slider.html">Compositart Slider</a>
-                                </li>
-                                <li class="submenu-li">
-                                    <a class="js-link" data-link="compositart_video"  data-page="pages/compositart_video.html">Compositart Video</a>
-                                </li>
+                                <li class="submenu-li"> <a id="a3" class="js-link" data-link="cmptyt"   data-page="pages/cmptyt.html">Compositart Youtube</a></li>
 
                             </ul>
                         </div>
@@ -76,36 +67,34 @@
 
 
                     <li  class="menu-li">
-                        <a class="collapsible-a"><i class="fas fa-download"></i>Opisy <i
-                                class="fa fa-angle-down rotate-icon"></i></a>
+                        <a class="collapsible-a"><i class="fas fa-download"></i>Planowane <i class="fa fa-angle-down rotate-icon"></i></a>
                         <div class="collapsible-body">
                             <ul class="sub-menu">
-                                <li class="submenu-li">
-                                    <a class="js-link" data-link="test2" data-page="pages/test2.html">Test 2</a>
-                                </li>
-                                <li class="submenu-li">
-                                    <a class="js-link" data-link="test5" data-page="pages/test5.html">Test 5</a>
-                                </li>
+                                <li class="submenu-li"> <a class="js-link" data-link="compositart_emenu"  data-page="pages/compositart_emenu.html"  >Compositart Viewer</a> </li>
+                                <li class="submenu-li"> <a class="js-link" data-link="compositart_code"  data-page="pages/compositart_code.html">Compositart Code</a></li>
+                                <li class="submenu-li"> <a class="js-link" data-link="compositart_image"  data-page="pages/compositart_image.html">Compositart Image</a></li>
+                                <li class="submenu-li"> <a class="js-link" data-link="compositart_slider"  data-page="pages/compositart_slider.html">Compositart Slider</a> </li>
+                                <li class="submenu-li"> <a class="js-link" data-link="compositart_video"  data-page="pages/compositart_video.html">Compositart Video</a> </li>
 
                             </ul>
                         </div>
                     </li>
 
-                    <li id="trzy" class="menu-li">
-                        <a class="collapsible-a"><i class="fas fa-th"></i>Fonts in webpage<i class="fa fa-angle-down rotate-icon"></i></a>
-                        <div class="collapsible-body">
-                            <ul class="sub-menu">
-                                <li class="submenu-li">
-                                    <a class=" js-link subcollapsible-a" data-link="standard_fonts" data-page="pages/standard_fonts.html">Starndart fonts</a>
-                                <li class="submenu-li">
-                                    <a class="js-link subcollapsible" data-link="google_roboto_font" data-page="pages/google_roboto_font.html">Google Roboto Font</a>
-                                </li>
-                                <li class="submenu-li">
-                                    <a class="js-link subcollapsible" data-link="google_fonts" data-page="pages/google_fonts.html">Google fonts</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+<!--                    <li id="trzy" class="menu-li">-->
+<!--                        <a class="collapsible-a"><i class="fas fa-th"></i>Fonts in webpage<i class="fa fa-angle-down rotate-icon"></i></a>-->
+<!--                        <div class="collapsible-body">-->
+<!--                            <ul class="sub-menu">-->
+<!--                                <li class="submenu-li">-->
+<!--                                    <a class=" js-link subcollapsible-a" data-link="standard_fonts" data-page="pages/standard_fonts.html">Starndart fonts</a>-->
+<!--                                <li class="submenu-li">-->
+<!--                                    <a class="js-link subcollapsible" data-link="google_roboto_font" data-page="pages/google_roboto_font.html">Google Roboto Font</a>-->
+<!--                                </li>-->
+<!--                                <li class="submenu-li">-->
+<!--                                    <a class="js-link subcollapsible" data-link="google_fonts" data-page="pages/google_fonts.html">Google fonts</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </li>-->
 
                 </ul>
 
@@ -149,47 +138,30 @@
 
 
                         <div class=" nav-top  language-switch">
-                            <div style="display: flex">
+                            <div id="language-change" style="display: flex">
                                 <span class="__t">Language</span>
                                 <div id="btn-lang" class="" data-bs-toggle="dropdown" aria-haspopup="true"
                                      aria-expanded="true">
-                                    <!--                                        <div class="flages"><img id="actual-language" src="img/flags/es.png" width="23" alt="image">  </div>-->
+                                                                            <div class="flages"><img id="actual-language" src="img/flags/es.png" width="23" alt="image">  </div>
                                 </div>
                             </div>
 
-                            <div class="dropdown-menu dropdown-menu-end show" style=""
-                                 data-popper-placement="bottom-end">
-                                <!--                                    <div id="flag-colombia" data-lang="co" title="Colombia" class="flags  padding-left-20"><img src="img/flags/co.png" width="23">Colombia</div>-->
-                                <!--                                    <div id="flag-poland" data-lang="pl" title="Poland" class="flags  padding-left-20"><img src="img/flags/pl.png" width="23">Poland</div>-->
-                                <!--                                    <div id="flag-russia" data-lang="ru" title="Russia" class="flags  padding-left-20"><img src="img/flags/ru.png" width="23">Russia</div>-->
-                                <!--                                    <div id="flag-spain" data-lang="es" title="Spain" class="flags  padding-left-20"><img src="img/flags/es.png" width="23" alt="spain">Spain</div>-->
-                                <!--                                    <div id="flag-english" data-lang="en" title="English" class="flags  padding-left-20"><img src="img/flags/en.png" width="23" alt="spain">English</div>-->
-
-
+                            <div id="delegation" class=" delegation dropdown-menu dropdown-menu-end show" style="" data-popper-placement="bottom-end">
+                                        <div id="flag-colombia"  data-lang ="co"  title="Colombia"  class="flags button-js" ><img src="img/flags/co.png" width="23" />Colombia</div>
+                                        <div id="flag-poland"    data-lang ="pl"  title="Poland"    class="flags button-js" ><img src="img/flags/pl.png" width="23" />Poland</div>
+                                        <div id="flag-spain"     data-lang ="co"  title="Spain"     class="flags button-js" ><img src="img/flags/es.png" width="23" alt="spain"/>Spain</div>
+                                        <div id="flag-english"   data-lang ="en"  title="English"   class="flags button-js" ><img src="img/flags/en.png" width="23" alt="spain"/>English</div>
                             </div>
                         </div>
 
 
-                        <div class="nav-top nav-js">
-
-                            <div class="caButton js-btn" data-id="celicense" data-type="default"><i
-                                    class="far fa-address-card"></i> License
-                            </div>
-
+                        <div class=" membar d-inline-block   nav-top nav-js">
+                            <div class="caButton js-btn" data-id="mcl-license"><i class="far fa-address-card"></i><span data-t="tlic">License</span></div>
                         </div>
 
 
-                        <div class="nav-top nav-js">
-                            <div class="caButton js-btn" data-id="ceoption" data-type="default"><i
-                                    class="far fa-address-card"></i> About
-                            </div>
-                        </div>
-
-                        &nbsp;
-                        <div class="nav-top nav-js">
-                            <div id="modal-config" class="caButton js-btn" data-id="ceconfig" data-type="default"><i
-                                    class="fa fa-cog" aria-hidden="true"></i>Config
-                            </div>
+                        <div class=" membar d-inline-block   nav-top nav-js">
+                            <div id="modal-config1" class="caButton js-btn" data-id="mcl-config"    ><i class="fa fa-cog" aria-hidden="true"></i><span data-t="tabout">About</span></div>
 
                         </div>
 
@@ -217,16 +189,20 @@
                             <h2 style="font-family: 'Roboto', sans-serif; font-style: italic">Preludium</h2>
                             <br>
 
-
-                            <p> AIREOBOOK C&E jesteśmy producentem nowoczesnego oprogramowania pozwalającego tworzyc nowoczesne strony, sklepy, bologi i inne aplikacje internetowe. </p>
-                            <p>Jednym z naszych priorytegów jest poropagoanie nowoczesnej nauki, związanej z fizyką, matematyką, a także filozofią natury.</p>
+                            <div data-t="home1">
+                                <p> AIREOBOOK C&E we are a producer of modern software that allows to create modern websites, shops, logs and other internet applications. </p>
+                                <p> One of our priorities is the promotion of modern science related to physics, mathematics, as well as the philosophy of nature. </p>
+                            </div>
 
                             <br>
-                            <p> A oto próbka jedengo z naszych pluginów do Worpressa. Hmmmmm, nie podoba Ci się nasza muzyka. Nic nie szkodzi. Pobierz jeden lub kilka naszych progrmowych wytczek do Wrordpresa.
-                                I zrób stronę multimedialną Twoich marzeń, taką jaka dla Ciebie będzie najlepsza. My Ci to umożliwiamy.
-                            </p>
-                            <p>Nasze darmowe programy mogą zawierać niewielkie elementy reklamowe. Tak musi być. Nasza praca też kosztuje. Jeśli chcesz się pozbyć tej reklamy. mozesz wykupić wersje komercyjną.
-                            Pomożesz nam wtedy w tworzeniu jeszce lepiszych programów i ulepszaniu tych co już są, a jednocześnie sam uzyskasz produkt najwyższej jakości, bez dodatków, które nie ma co ukrywać, nie są zby pożodane na twojej stronie</p>
+                            <span data-t="home2">
+<p> Here is a sample of one of our Worpress plugins. Hmmmmm, you don't like our music. No worries. Download one or more of our Wrordpres software guidelines.
+                                     And make the multimedia website of your dreams, the one that will be the best for you. We make it possible for you.
+                                 </p>
+                                 <p> Our free software may contain small advertising elements. It must be so. Our work costs money too. If you want to get rid of this ad. you can buy the commercial version.
+                                 Then you will help us to create even better programs and improve those that already exist, and at the same time you will get a product of the highest quality, without any additions, no need to hide, they are not desirable on your website </p>
+                            </span>
+
 
 
 
@@ -234,43 +210,43 @@
 
 
                         <div class="imnages">
-                            <div class="btn-i1 btn-120 " data-videocode="hM89pcTW4Q8" data-title="" data-animation="anim04" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="hM89pcTW4Q8" data-title="" data-animation="animation04" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/hM89pcTW4Q8.jpg" alt="">
                             </div>
 
-                            <div class="btn-i1 btn-120 " data-videocode="G31UWfjyyjo" data-title="" data-animation="anim01" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="G31UWfjyyjo" data-title="" data-animation="animation01" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/G31UWfjyyjo.jpg" alt="">
                             </div>
 
 
-                            <div class="btn-i1 btn-120 " data-videocode="FS-siemT6eQ" data-title="" data-animation="anim05" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="FS-siemT6eQ" data-title="" data-animation="animation05" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/FS-siemT6eQ.jpg" alt="">
                             </div>
 
 
-                            <div class="btn-i1 btn-120 " data-videocode="oIO5lfJ9dhs" data-title="" data-animation="anim03" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="oIO5lfJ9dhs" data-title="" data-animation="animation03" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/oIO5lfJ9dhs.jpg" alt="">
                             </div>
 
-                            <div class="btn-i1 btn-120 " data-videocode="mWLXQzgvhVc" data-title="" data-animation="anim02" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="mWLXQzgvhVc" data-title="" data-animation="animation02" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/mWLXQzgvhVc.jpg" alt="">
                             </div>
 
 
-                            <div class="btn-i1 btn-120 " data-videocode="z1OzLZZC5Cc" data-title="" data-animation="anim06" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="z1OzLZZC5Cc" data-title="" data-animation="animation06" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/z1OzLZZC5Cc.jpg" alt="">
                             </div>
 
-                            <div class="btn-i1 btn-120 " data-videocode="i05t5vJXvxo" data-title="" data-animation="anim07" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="i05t5vJXvxo" data-title="" data-animation="animation07" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/i05t5vJXvxo.jpg" alt="">
                             </div>
 
-                            <div class="btn-i1 btn-120 " data-videocode="FcjBdm5fJ0c" data-title="" data-animation="anim03" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="FcjBdm5fJ0c" data-title="" data-animation="animation03" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/FcjBdm5fJ0c.jpg" alt="">
                             </div>
 
 
-                            <div class="btn-i1 btn-120 " data-videocode="R4q-woagbu4" data-title="" data-animation="anim08" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
+                            <div class="btn-i1 btn-120 " data-videocode="R4q-woagbu4" data-title="" data-animation="animation08" data-footer="footer2" data-type="modal-1" data-width="854" data-height='480'>
                                 <img class="link-image" src="img/yt/R4q-woagbu4.jpg" alt="">
                             </div>
 

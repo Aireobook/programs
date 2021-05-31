@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
 
     function fmouse(e){
         window.epage = document.getElementById('page');
-        console.dir(epage)
+        // console.dir(epage)
     }
 
 

@@ -73,10 +73,10 @@ InitAction.prototype.htmlLink = function (url) {
             // let ala = link.getAttribute('href')
             let ala = link.dataset.page;
 
-            console.log('ala-------------------------------', ala)
 
             let button_link = link.dataset.link;
-            window.history.replaceState({}, document.title, hostname + '?page=' + button_link);
+            // window.history.replaceState({}, document.title, hostname + '?page=' + button_link);
+            window.history.replaceState({}, document.title, hostname + '?page=' + encodeURIComponent(button_link));
             self.ajax(ala);
 
             if (_old !== false) {
@@ -134,9 +134,7 @@ InitAction.prototype.ajax = function (url) {
     if (url) {
         fetch(url)
            .then(function (res){
-               // console.log('response status', res.status)
                if (res.status !== 200){
-                   // console.log("Problem ajax status: " + res.status);
                    self.page404(res.status);
                    return Promise.reject(new Error(res.status))
                }else{
