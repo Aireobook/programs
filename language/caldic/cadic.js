@@ -60,7 +60,6 @@ Cadic.prototype.buttons = function (classes = 'delegation'){
     const button = buttons;
 
     const actual_lang = get_language() || "en";
-console.log('actual langgggggggggggg', actual_lang)
     actual.src = "img/flags/" + get_language() +".png";
 
     if (actual_lang === 'en'){
@@ -77,7 +76,6 @@ console.log('actual langgggggggggggg', actual_lang)
             const data_land = e.target.dataset.lang;
             set_language(data_land);
 
-            console.log('data_lang--------------', data_land)
 
             if (data_land === 'en'){
                  this.resetLanguage();
@@ -85,7 +83,6 @@ console.log('actual langgggggggggggg', actual_lang)
                 this.url(data_land);
             }
 
-            console.log('get language', get_language());
             actual.src = "img/flags/" + get_language() +".png";
         }
     })
